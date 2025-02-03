@@ -1,20 +1,44 @@
-// Chapter2Exercise18.cpp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+File Name : Chapter2Exercise18.cpp
+Programmer : Morgan Thorne
+Date : 01 / 2025
+Requirements :
+displays the approximate number of customers in the survey who purchase one or more energy drinks per week.
+and the approximate number of customers in the survey who prefer citrus - flavored energy drinks.
+Allow user to enter number of those surveyed and give results based off of given number. 
+*/
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int customer;
+
+	cout << "Number of customers surveyed ";
+		cin >>customer;
+	
+	/*Number Of customers surveyed*/
+	
+	double buyEnergydrink = 0.15,
+		/*Percent of customers who buy one or more a week*/
+		   buyCitrusdrink = buyEnergydrink * 0.58;
+		/*Percent of customers that buy a citrus flavor out of buyEnergydrink*/
+	int EnergydrinkCustomer = customer * buyEnergydrink;
+	
+	int Citrusdrinkcustomer = customer * buyCitrusdrink;
+
+	cout << "Energy Drink Consumption Survey" << endl;
+
+	cout << customer<<" customers were surveyed" << endl;
+
+	cout << EnergydrinkCustomer << " Customers purchase one or more energy drinks per week." << endl;
+
+	cout << Citrusdrinkcustomer << " Customers prefer citrus-flavored energy drinks." << endl;
+
+	return 0;
+
+
+
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
