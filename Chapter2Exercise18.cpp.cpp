@@ -13,24 +13,24 @@ using namespace std;
 
 int main()
 {
-	int customer = 16500;
-	/*Number Of customers surveyed*/
+int customer = 16500;
+/*Number Of customers surveyed*/
 
-	double buyEnergydrink = 0.15,
-		/*Percent of customers who buy one or more a week*/
-		buyCitrusdrink = buyEnergydrink * 0.58;
-	/*Percent of customers that buy a citrus flavor out of buyEnergydrink*/
-	int EnergydrinkCustomer = customer * buyEnergydrink;
+double buyEnergydrink = 0.15;
+/*Percent of customers who buy one or more a week*/
+double buyCitrusdrink = buyEnergydrink * 0.58;
+/*Percent of customers that buy a citrus flavor out of buyEnergydrink*/
+int EnergydrinkCustomer = customer * buyEnergydrink;
 
-	int Citrusdrinkcustomer = customer * buyCitrusdrink;
+int Citrusdrinkcustomer = customer * buyCitrusdrink;
 
-	cout << "Energy Drink Consumption Survey" << endl;
+cout << "Energy Drink Consumption Survey" << endl;
 
-	cout << customer << " customers were surveyed" << endl;
+cout << customer << " customers were surveyed" << endl;
 
-	cout << EnergydrinkCustomer << " Customers purchase one or more energy drinks per week." << endl;
+cout << EnergydrinkCustomer << " Customers purchase one or more energy drinks per week." << endl;
 
-	cout << Citrusdrinkcustomer << " Customers prefer citrus-flavored energy drinks." << endl;
+cout << Citrusdrinkcustomer << " Customers prefer citrus-flavored energy drinks." << endl;
 
-	return 0;
+return 0;
 }
